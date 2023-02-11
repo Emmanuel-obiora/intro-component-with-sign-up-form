@@ -85,6 +85,7 @@ body {
   padding: 0.6rem;
   border: 1px solid hsl(246deg, 25%, 77%);
   border-radius: 5px;
+  background: transparent;
 }
 .right-form_input-field > small {
   color: hsl(0deg, 87%, 64%);
@@ -127,8 +128,17 @@ body {
   display: none;
 }
 
-.show {
-  display: block;
+.right-form_input-field.error-input input {
+  border: 1px solid hsl(0deg, 87%, 64%);
+  color: hsl(0deg, 87%, 64%);
+}
+
+.right-form_input-field.error-input input::-moz-placeholder {
+  color: hsl(0deg, 87%, 64%);
+}
+
+.right-form_input-field.error-input input::placeholder {
+  color: hsl(0deg, 87%, 64%);
 }
 
 footer {

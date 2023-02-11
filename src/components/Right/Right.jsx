@@ -23,98 +23,64 @@ const Right = () => {
             addErrorTo('Fname', 'First name cannot be empty');
             icon.style.display = 'block';
         } 
-        // else{
-        //     removeErrorFrom('Fname');
-        //     icon.style.display = 'none';
-        // }
+        else{
+            removeErrorFrom('Fname');
+            icon.style.display = 'none';
+        }
 
         if (last === ""){
             addErrorTo('Lname', 'last name cannot be empty');
             icon2.style.display = 'block';
         } 
-        // else {
-        //     removeErrorFrom('Lname');
-        //     icon2.style.display = 'none';
-        // }
+        else {
+            removeErrorFrom('Lname');
+            icon2.style.display = 'none';
+        }
 
         if (email === ""){
             addErrorTo('Email', 'email cannot be empty');
             icon3.style.display = 'block';
         } 
-        // else if (!isValid(email)){
-        //     addErrorTo('Email', 'Looks like this is not an email');
-        //     icon3.style.display = 'block';
-        // } 
-        // else {
-        //     removeErrorFrom('Email');
-        //     icon3.style.display = 'none';
-        // }
+        else if (!isValid(email)){
+            addErrorTo('Email', 'Looks like this is not an email');
+            icon3.style.display = 'block';
+        } 
+        else {
+            removeErrorFrom('Email');
+            icon3.style.display = 'none';
+        }
 
         if (password === ""){
             addErrorTo('Pass', 'password cannot be empty');
             icon4.style.display = 'block';
+        } else {
+            removeErrorFrom('Pass');
+            icon4.style.display = 'none';
         }
-            // } else {
-        //     removeErrorFrom('Pass');
-        //     icon4.style.display = 'none';
-        // }
         
     };
 
     function addErrorTo(field, message){
-    const small = formData[field].parentNode.querySelector('small');
-    small.innerText = message;
-    small.style.display = 'block';
+        const inputControl = formData[field].parentNode;
+        inputControl.classList.add('error-input');
+
+        const small = inputControl.querySelector('small');
+        small.innerText = message;
+        small.style.display = 'block';
     }
 
-    // function removeErrorFrom(field){
-    // const small = formData[field].parentNode.querySelector('small');
-    // small.style.display = 'none';
-    // }
+    function removeErrorFrom(field){
+        const inputControl = formData[field].parentNode;
+        inputControl.classList.remove('error-input');
 
-    // const isValid = (email) => {
-    //     return String(email)
-    //         .toLowerCase()
-    //         .match(
-    //         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    //         );
-    //     };
+        const small = inputControl.querySelector('small');
+        small.style.display = 'none';
+    }
 
-    // function isValid(email) {
-    // var re = /\S+@\S+\.\S+/;
-    // return re.test(email);
-    // }
-
-    // function validate() {
-    //     let firstName = document.getElementById("Fname").value;
-    //     let lastName = document.getElementById("Lname").value;
-    //     let userEmail = document.getElementById("Email").value;
-    //     let password = document.getElementById("Pass").value;
-        
-    //     const fDisplay = document.getElementById('nameF');
-    //     const lDisplay = document.getElementById('nameL');
-
-    //     if (firstName === null || firstName === ""){
-    //         fDisplay.classList.add('show');
-    //         return false;
-    //     }
-    //     if (lastName === null || lastName === ""){
-    //         // lDisplay.classList.add('show');
-    //         return false;
-    //     }
-    //     if (userEmail == null || userEmail === "") {
-    //         alert("Please enter the Email address.");
-    //         return false;
-    //     }
-    //     if (password == null || password === "") {
-    //         alert("Please enter the password.");
-    //         return false;
-    //     }
-    //     if (password && password.length > 0 && password.length < 8){
-    //         alert("Password must be up to 8 characters");
-    //         return false;
-    //     }
-    // }
+    function isValid(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
 
     return (
         <div className='right'>

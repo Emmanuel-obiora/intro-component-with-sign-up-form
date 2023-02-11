@@ -28,7 +28,6 @@
         border-radius: 5px;
         box-shadow: 2px 5px 5px $Dark-Blue;
         align-items: center;
-        // justify-content: center;
 
         &_input-field{
             display: flex;
@@ -41,11 +40,8 @@
                 padding: .6rem;
                 border: 1px solid $Grayish-Blue;
                 border-radius: 5px;
+                background: transparent;
             }
-        
-            // &>input:focus{
-            //     border: 1px solid $Blue;
-            // }
         
             & > small{
                 color: $danger;
@@ -95,7 +91,13 @@
     display: none;
 }
 
-// to display error message
-.show{
-    display: block;
+// ===adding border and text error to input fields===
+
+.right-form_input-field.error-input input{
+    border: 1px solid $danger;
+    color: $danger;
+}
+
+.right-form_input-field.error-input input::placeholder{
+    color: $danger;
 }
