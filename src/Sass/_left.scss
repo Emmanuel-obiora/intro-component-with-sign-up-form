@@ -8,10 +8,18 @@
         color: $white;
         line-height: 1;
         letter-spacing: 1px;
+
+        @media(max-width: 37.5rem){
+            font-size: 30px;
+        }
     }
 
     & > p{
         font-size: 14px;
         color: $white-varient;
+
+        @media(max-width: 37.5rem){
+            font-size: 13px;
+        }
     }
 }
