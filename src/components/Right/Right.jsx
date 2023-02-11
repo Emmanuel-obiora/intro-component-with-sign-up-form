@@ -64,7 +64,7 @@ const Right = () => {
     return (
         <div className='right'>
             <h2 className='right-top'>Try it free 7 days<span className="right-top_change">then $20/mo. thereafter </span></h2>
-            <form action="" className='right-form' id="signUp" onSubmit={sendEmail}>
+            <form className='right-form' id="signUp" onSubmit={sendEmail}>
                 <div className='right-form_input-field'>
                     <input type="text" id='Fname' placeholder='First Name'/>
                     <img src={errorIcon} className="error" id="nameF" alt="" />

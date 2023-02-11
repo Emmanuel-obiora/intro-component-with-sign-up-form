@@ -12,7 +12,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -56,10 +55,10 @@ To see how you can add code snippets, see below:
 const sendEmail = (e) => {
         e.preventDefault();
 
-        const first = formData['Fname'].value;
-        const last = formData['Lname'].value;
-        const email = formData['Email'].value;
-        const password = formData['Pass'].value;
+        const first = document.getElementById('Fname').value;
+        const last = document.getElementById('Lname').value;
+        const email = document.getElementById('Email').value;
+        const password = document.getElementById('Pass').value;
 }
 ```
 
@@ -68,7 +67,3 @@ const sendEmail = (e) => {
 - Website - [Obiora Emmanuel](https://emmanuel-obiora.github.io/portfolio-about-me-/web-content)
 - Frontend Mentor - [@Emmanuel-obiora](https://www.frontendmentor.io/profile/Emmanuel-obiora)
 - Twitter - [@Miroclesdgenius](https://twitter.com/Miroclesdgenius)
-
-## Acknowledgments
-
-My thanks goes to Florin Pop, his youtube video guided me on some Js control when I got confused.
