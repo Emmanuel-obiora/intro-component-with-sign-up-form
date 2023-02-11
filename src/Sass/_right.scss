@@ -114,3 +114,11 @@
 .right-form_input-field.error-input input::placeholder{
     color: $danger;
 }
+
+.error-input small{
+    display: block;
+}
+
+.error-input .error{
+    display: block;
+}

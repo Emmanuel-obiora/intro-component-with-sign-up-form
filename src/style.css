@@ -179,6 +179,14 @@ body {
   color: hsl(0deg, 87%, 64%);
 }
 
+.error-input small {
+  display: block;
+}
+
+.error-input .error {
+  display: block;
+}
+
 footer {
   margin-top: auto;
 }
