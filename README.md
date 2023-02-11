@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Emmanuel-obiora/intro-component-with-sign-up-form)
-- Live Site URL: [Github-pages](https://emmanuel-obiora.github.io/intro-component-with-sign-up-form)
+- Live Site URL: [Netlify](https://intro-with-signupform.netlify.app/)
 
 ## My process
 
