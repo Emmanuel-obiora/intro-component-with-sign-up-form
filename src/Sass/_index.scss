@@ -4,4 +4,8 @@ body{
     background: url(/src/images/bg-intro-desktop.png) $Red;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media(max-width: 37.5rem){
+        background: url(/src/images/bg-intro-mobile.png) $Red;
+    }
 }
