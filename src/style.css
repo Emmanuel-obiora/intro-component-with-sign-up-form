@@ -1,3 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: url(/src/images/bg-intro-desktop.png) hsl(0deg, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app {
+  display: grid;
+  min-height: 100vh;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: auto auto 0 auto;
+  width: 800px;
+  height: 500px;
+  gap: 1rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.left > h1 {
+  font-size: 35px;
+  color: hsl(0deg, 0%, 100%);
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.left > p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.right-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 2rem;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(248deg, 32%, 49%);
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px hsl(249deg, 10%, 26%);
+  font-size: 14px;
+}
+.right-top_change {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 5px;
+}
+.right-form {
+  display: grid;
+  padding: 1.5rem;
+  row-gap: 0.7rem;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px hsl(249deg, 10%, 26%);
+  align-items: center;
+}
+.right-form_input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+.right-form_input-field > input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 5px;
+}
+.right-form_input-field > small {
+  color: hsl(0deg, 87%, 64%);
+  text-align: right;
+  font-size: 12px;
+  display: none;
+}
+.right-form_submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(154deg, 59%, 51%);
+  border: none;
+  padding: 0.6rem 2rem;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.right-form_submit:hover {
+  background: hsl(154deg, 68%, 65%);
+}
+.right-form_submit:active {
+  margin: 0 3px;
+}
+.right-form_para {
+  font-size: 10px;
+  color: hsl(246deg, 25%, 77%);
+  text-align: center;
+}
+
+.red-para {
+  color: hsl(0deg, 87%, 64%);
+}
+
+.error {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  max-width: 6%;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

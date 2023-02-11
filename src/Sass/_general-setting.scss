@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Green-varient: hsl(154, 68%, 65%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+$white: hsl(0, 0%, 100%);
+$white-varient: rgba(255, 255, 255, .8);
+$danger: hsl(0, 87%, 64%);

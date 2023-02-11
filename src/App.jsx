@@ -1,10 +1,13 @@
 import React from 'react'
-import 'style.css'
+import './style.css'
+import Main from './components/Main/Main'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
     return (
-        <div>
-        
+        <div className='app'>
+            <Main />
+            <Footer />
         </div>
     )
 }

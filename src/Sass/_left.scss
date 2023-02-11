@@ -1,0 +1,17 @@
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & > h1{
+        font-size: 35px;
+        color: $white;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+
+    & > p{
+        font-size: 14px;
+        color: $white-varient;
+    }
+}

@@ -5,7 +5,7 @@ import Right from '../Right/Right'
 
 const Main = () => {
     return (
-        <main>
+        <main className="main">
             <Left />
             <Right />
         </main>

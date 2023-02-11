@@ -1,0 +1,101 @@
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .6rem 2rem;
+        color: $white;
+        background: $Blue;
+        border-radius: 5px;
+        box-shadow: 2px 5px 5px $Dark-Blue;
+        font-size: 14px;
+
+        &_change{
+            color: $white-varient;
+            margin-left: 5px;
+        }
+    }
+
+    &-form{
+        display: grid;
+        padding: 1.5rem;
+        row-gap: .7rem;
+        background: $white;
+        border-radius: 5px;
+        box-shadow: 2px 5px 5px $Dark-Blue;
+        align-items: center;
+        // justify-content: center;
+
+        &_input-field{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: relative;
+        
+            & > input{
+                width: 100%;
+                padding: .6rem;
+                border: 1px solid $Grayish-Blue;
+                border-radius: 5px;
+            }
+        
+            // &>input:focus{
+            //     border: 1px solid $Blue;
+            // }
+        
+            & > small{
+                color: $danger;
+                text-align: right;
+                font-size: 12px;
+                display: none;
+            }
+        }
+
+        &_submit{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $Green;
+            border: none;
+            padding: .6rem 2rem;
+            color: $white;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background: $Green-varient;
+            }
+
+            &:active{
+                margin: 0 3px;
+            }
+        }
+
+        &_para{
+            font-size: 10px;
+            color: $Grayish-Blue;
+            text-align: center;
+        }
+    }
+}
+
+.red-para{
+    color: $danger;
+}
+
+.error{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    max-width: 6%;
+    display: none;
+}
+
+// to display error message
+.show{
+    display: block;
+}
